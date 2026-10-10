@@ -1,0 +1,50 @@
+{
+  "source": "AI4I 2020 (UCI) \u2014 real dataset",
+  "n_rows": 10000,
+  "failure_rate": 0.0339,
+  "split": {
+    "train": 6000,
+    "validation": 2000,
+    "test": 2000
+  },
+  "threshold": 0.02,
+  "test_metrics": {
+    "pr_auc": 0.8753844067658698,
+    "roc_auc": 0.9785196687370601,
+    "precision": 0.4066666666666667,
+    "recall": 0.8970588235294118,
+    "f1": 0.5596330275229358,
+    "false_alarms_per_1000": 44.5
+  },
+  "mode_metrics": {
+    "TWF": {
+      "support_test": 10,
+      "pr_auc": 0.0681827117396163
+    },
+    "HDF": {
+      "support_test": 29,
+      "pr_auc": 1.0
+    },
+    "PWF": {
+      "support_test": 13,
+      "pr_auc": 0.9885883347421809
+    },
+    "OSF": {
+      "support_test": 16,
+      "pr_auc": 0.9770716619981326
+    }
+  },
+  "failure_type_accuracy": 0.9848484848484849,
+  "feature_importance": {
+    "rpm": 0.2272406691800866,
+    "power_kw": 0.19235097445552424,
+    "strain_ratio": 0.17394424640218695,
+    "temp_diff_k": 0.1110946331180388,
+    "torque_nm": 0.09518655546647661,
+    "wear_min": 0.07837758508884951,
+    "proc_k": 0.045435183176023373,
+    "strain": 0.03897075638224379,
+    "air_k": 0.029579572499200804,
+    "type_code": 0.007819824231369319
+  }
+}
