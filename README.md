@@ -73,17 +73,3 @@ The pipeline picks up the real file automatically. The column names are identica
 | Share of the maximum possible saving captured | ~81% |
 
 \*Failure types in AI4I follow physical rules, so they are highly separable. Expect slightly different numbers on the real file. Re-run `train.py` and quote those.
-
-## 2-minute pitch outline
-
-1. **Problem (20 s).** Supervisors either fix on a fixed schedule (wasteful) or after breakdown (an unplanned failure costs ~RM 20k). They have limited technicians and no way to know which machines matter today.
-2. **User and decision (15 s).** The maintenance supervisor, at the start of each shift: "Which N machines do my technicians touch today?"
-3. **Demo (60 s).** Action list → drill into #1 (reason + action + RM) → toggle messy sensors → change capacity.
-4. **Proof (20 s).** Backtest on unseen data: −65% cost vs run-to-failure, 7× fewer false alarms than the schedule, ~81% of the theoretical maximum saving.
-5. **Honesty and next step (10 s).** The data is operating snapshots; with live sensor streams we'd add time-to-failure forecasting. All cost assumptions are editable.
-
-## Limitations (say these before the judges do)
-- The records are **snapshots, not time series**, so the copilot flags machines *currently in a high-risk state*.
-- **Random failures** (~0.1%) are unpredictable by design.
-- **Tool wear failures** occur at a random point in the 200–240 min window, so they are the hardest type to catch early. They show as "low-confidence diagnosis" when the model is unsure.
-- **Cost figures are assumptions** and are editable in the sidebar.
